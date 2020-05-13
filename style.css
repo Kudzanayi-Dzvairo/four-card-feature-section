@@ -55,37 +55,95 @@ body{
 
 .features{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
     align-items: center;
     height: 75%;
-    border: 1px solid red;
+
 }
 
 .card{
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    border: 1px solid red;
-    height: 50%;
-    width: 33%;
+    flex-direction: column; 
+    height:20rem;
+    width:29rem;
     padding: 2em;
     font-size: 1rem;
     color:hsl(234, 12%, 34%);
+    position: relative;
+   overflow: hidden;
+   
 }
 
-.card p{
+
+
+.card-title{
+    font-weight: 600;
+    font-size: 1.5em;
+    color: hsl(234, 12%, 34%);
+    text-align: left;
+}
+
+.card-text{
     font-size: 1rem;
     font-weight: 200;
     text-align: left;
-    color:hsl(229, 6%, 66%)
+    color:hsl(229, 6%, 66%);
 }
 
-.card h3{
-    font-weight: 600;
+.container-middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin: 1em;
+    margin-bottom: 3em;
 }
 
-img{
-    align-self: flex-end;
-    margin: 
+.container-middle .card{
+    height: 50%
 }
+  
+.card-image{
+   align-self: flex-end;
+
+   margin-top: auto
+}
+
+.team-builder{
+    border-top: 4px solid hsl(0, 78%, 62%);
+  }
+  
+  .supervisor{
+    border-top: 4px solid hsl(180, 62%, 55%);
+  }
+  
+  .karma{
+   border-top: 4px solid hsl(34, 97%, 64%);
+  }
+  
+  .calculator{
+    border-top: 4px solid hsl(212, 86%, 64%);
+  }
+
+  @media screen and (max-width: 800px){
+      body{
+          display: flex;
+          flex-direction: column;
+          height:100vh
+      }
+
+
+      .main{
+          height: 25%;
+      }
+
+      .container-middle{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card
+
+
+  }
