@@ -138,12 +138,15 @@ body{
           height: 25%;
       }
 
-      .container-middle{
+      .features{
         display: flex;
         flex-direction: column;
+        height: 75%;
     }
 
-    .card
-
-
+    .card{
+        height: 25%;
+        width:100%
+    }
   }
+ 
